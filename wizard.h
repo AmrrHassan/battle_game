@@ -14,7 +14,13 @@ using namespace std;
 #ifndef TASK_2_WIZARD_H
 #define TASK_2_WIZARD_H
 
-
+/**
+ * wizard.h
+ * Purpose: parent element for harry.h and voldemort.h
+ *          initialize properties and functions
+ * ...
+ *
+ */
 class wizard{
 //    Parent class : wizard properties
     protected:

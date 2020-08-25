@@ -12,6 +12,12 @@
 using namespace std;
 
 Harry::Harry() : wizard::wizard() {
+/**
+* harry.cpp
+* Purpose: initialize player porperties
+* ...
+* apply spells and name
+*/
 //    initialize harry's private properties
     name = "Harry Potter";
 //    harry's personal spells

@@ -14,6 +14,7 @@
 using namespace std;
 
 class Harry : public wizard{
+
 // initialize harry
     public:
         Harry();

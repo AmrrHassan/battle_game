@@ -14,6 +14,18 @@
 #include "Harry.h"
 #include "voldemort.h"
 
+
+/**
+ * Game.h
+ * Purpose: Declare class to initialize properties and function for game flow
+ * ...
+ * Initialize player1 and 2
+ * Functions:
+ *      Game()
+ *      gamemenu()
+ *      fight()
+ */
+
 class Game {
 //    inialize both players ( harry and voldemort )
     protected:

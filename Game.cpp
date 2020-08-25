@@ -11,6 +11,18 @@
 #include <cmath>
 #include "Game.h"
 
+
+
+/**
+ * Game.cpp
+ * Purpose: Control the game flow with multiple function
+ * ...
+ * Functions:
+ *      Game()
+ *      gamemenu()
+ *      fight()
+ */
+
 Game::Game() {
 }
 // seperate lines function
@@ -22,6 +34,13 @@ void seperateLine(){
 }
 
 void Game::gameMenu() {
+
+/**
+ * gamemenu()
+ * Purpose: Control the game menu start/end
+ * ...
+ *
+ */
 
     string answer; // input for Y/N
 
@@ -60,6 +79,21 @@ void Game::gameMenu() {
 }
 
 void Game::fight(){
+
+/**
+ * fight()
+ * Purpose: fight between both players
+ * ...
+ *    1- Get player1 input
+ *    2- Get player2 input
+ *    3- Compare both players inputs
+ *    4- Apply damage to the player with lower spell power
+ *    ... every spell has a damage and every player have his own spells and other common spells
+ *    5- continue game until a player loses all his health or energy
+ *    6- deduct shield if used
+ *    7- declare winner
+ *    8- return to gamemenu()
+ */
     int round = 1;
     int damage1, damage2;
 

@@ -14,6 +14,12 @@
 using namespace std;
 
 voldemort::voldemort() : wizard::wizard() {
+/**
+ * voldemort.cpp
+ * Purpose: initialize player porperties
+ * ...
+ * apply spells and name
+ */
     //    initialize voldemort's private properties
     name = "Lord Voldemort";
 //    voldemort personal spells
