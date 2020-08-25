@@ -12,14 +12,13 @@
 #include <map>
 using namespace std;
 
+//Functions explanation in wizard.h file
 
-
-//chang wizard's health
-
+// initialize wizard
 wizard::wizard(){
 
 }
-
+// get wizard's name
 string wizard::getName() {
     return name;
 }
@@ -36,7 +35,6 @@ void wizard::takeDamage(int damage) {
     health-=damage;
 }
 
-//get wizard's health
 
 int wizard::getHealth(){
     return health;
@@ -46,7 +44,6 @@ void wizard::setEnergy(int newEnergy){
     energy -= newEnergy;
 }
 
-//get wizard's health
 
 int wizard::getEnergy(){
     return energy;

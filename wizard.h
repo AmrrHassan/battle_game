@@ -16,6 +16,7 @@ using namespace std;
 
 
 class wizard{
+//    Parent class : wizard properties
     protected:
         int health = 100;
         int energy = 500;
@@ -23,15 +24,18 @@ class wizard{
         string name;
 
     public:
+//    wizard common spells associative array
         map<string, int> spells = {{"AvadaKedavra", 100}, {"Crucio", 40}, {"Imperio", 20}, {"shield", 0}};
+//      new wizard fuction
         wizard();
+
         int getHealth(); // get wizard health
-        void setShield();
-        int checkShield();
-        int getEnergy();
-        void setEnergy(int energy);
+        void setShield(); // decrease number of shields by 1 function
+        int checkShield(); // get wizard shield bum
+        int getEnergy(); // get wizard energy
+        void setEnergy(int energy); // decrease wizard energy
         virtual void takeDamage(int damage);
-        string getName();
+        string getName(); // receive damage wizard
 
 
 };

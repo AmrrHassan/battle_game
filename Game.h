@@ -15,11 +15,13 @@
 #include "voldemort.h"
 
 class Game {
+//    inialize both players ( harry and voldemort )
     protected:
         wizard* player1;
         wizard* player2;
 
     public:
+//
         Game();
         void gameMenu();
         void fight();

@@ -15,7 +15,7 @@ using namespace std;
 
 
 class voldemort : public wizard{
-
+// initialize voldemort
     public:
         voldemort();
 

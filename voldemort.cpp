@@ -14,7 +14,9 @@
 using namespace std;
 
 voldemort::voldemort() : wizard::wizard() {
+    //    initialize voldemort's private properties
     name = "Lord Voldemort";
+//    voldemort personal spells
     spells.insert({"Taboo", 80});
     spells.insert({"Confringo", 55});
     spells.insert({"Expulso", 60});

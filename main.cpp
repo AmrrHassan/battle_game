@@ -11,6 +11,7 @@ using namespace std;
 int main() {
 
     Game game;
+//    Start Game
     game.gameMenu();
     return 0;
 }
