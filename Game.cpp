@@ -9,7 +9,9 @@
 #include <ctype.h>
 #include <vector>
 #include <cmath>
+#include <fstream>
 #include "Game.h"
+using namespace std;
 
 
 
@@ -73,7 +75,6 @@ void Game::gameMenu() {
         }
 
 
-
     }
 
 }
@@ -98,6 +99,15 @@ void Game::fight(){
     int damage1, damage2;
 
     string spell1, spell2;
+    string filename;
+    cout << "Enter test file path: "<<endl;
+    cin >> filename;
+    ifstream testfile;
+    testfile.open(filename);
+    if (!testfile) {
+        cerr << "Unable to open file test.txt";
+        exit(1);
+    }
     while(player1->getHealth() > 0 && player2->getHealth() > 0 && player1->getEnergy()> 0 && player2->getEnergy() >0){ // exit loop when one of the players die
         int flag1 = 0;
         int flag2 = 0;
@@ -121,13 +131,15 @@ void Game::fight(){
         cout << endl;
         seperateLine();
 
+        // flag used to detect if both inputs are correct
         while(flag1 == 0 || flag2 == 0) {
 //            if spells input is wrong re-prompt user
             if (errors > 0){
                 cout << "Wrong input, please check your wand and try again..." << endl << endl;
             }
             cout << "Enter the two spells Harry then Voldemort:" << endl << endl;
-            cin >> spell1 >> spell2;
+            testfile >> spell1 >> spell2;
+            cout << "Harry's spell: " << spell1 << endl << "Voldemort's spell: "<< spell2<<endl;
 
 
 
@@ -199,5 +211,6 @@ void Game::fight(){
     else if (player2->getHealth() <= 0 || player2->getEnergy()<=0){
         cout << "Harry Won" << endl;
     }
+
 
 }
